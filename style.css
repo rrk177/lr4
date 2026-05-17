@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(211, 211, 211);
+  color: #333;
+
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  display: ;
+
+}
+
+
+main {
+  flex: 1;
+}
+
+.header {
+
+  padding: 15px 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+
+h2 {
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: rgb(230, 230, 230);
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 30px;
+  
+}
+
+.nav-item a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+p {
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+p.item_description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.card p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  font-style: italic;
+}
+
+.item_text ul {
+  list-style: none;
+  padding-left: 25px;
+}
+
+.item_text ul li {
+  background: url("../img/Bober-2_JM.png") no-repeat;
+  background-size: 14px 14px;
+  padding-left: 20px;
+}
+
+
+
+.container {
+  width: 80%;
+  margin: 30px auto;
+}
+
+
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+
+.catalog {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  width: 220px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 220px;
+  height: 220px;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.card-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0066cc;
+}
+
+
+.product-image {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+}
+
+.item_desc {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 30px;
+}
+
+p.item_price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
+
+.footer {
+
+  color: black;
+  text-align: center;
+  padding: 0 0;
+
+}
+
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 0px 0;
+}
+
+.item_text {
+  max-width: 500px;
+}
+
+
+.item-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+
+/* корзина */
+
+#cart-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+
+#cart-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+
+
+
+#cart-list button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#cart-list button:hover {
+  background-color: #cc0000;
+}
+
+
+.total {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: right;
+  margin-top: 20px;
+  color: #333;
+}
+
+
+.cart-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.pay-cart,
+.clear-cart {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.pay-cart {
+  background-color: #28a745;
+  color: white;
+}
+
+.pay-cart:hover {
+  background-color: #218838;
+}
+
+.clear-cart {
+  background-color: #6c757d;
+  color: white;
+}
+
+.clear-cart:hover {
+  background-color: #5a6268;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Каталог</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="cart-variable.js"></script>
+</head>
+
+<body>
+
+  <header class="header">
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="index.html">Главная</a></li>
+        <li class="nav-item"><a href="catalog.html">Каталог</a></li>
+        <li class="nav-item shop"><a href="cart.html">Корзина</a></li>
+      </ul>
+    </nav>
+
+  </header>
+  <hr>
+
+  <main class="container">
+
+    <h1 class="title">Каталог</h1>
+    <button class="filter-iphone14">Iphone 14</button>
+    <button class="filter-iphone16">Iphone 16</button>
+    <button class="reset-filter">Сбросить фильтры</button>
+
+    <div class="catalog">
+
+
+      <div class="card" data-category="Iphone 14">
+        <a href="items/iphone14desc.html" target="_blank" rel="">
+          <img src="img/iphone14.jpg" alt="iPhone 14">
+        </a>
+        <p class="item-name">iPhone 14</p>
+        <p class="item-price" data-price="75000">75000</p>
+        <a class="card-link" href="items/iphone14desc.html">Подробнее</a>
+        <button class='card button' data-id=1>Добавить в корзину</button>
+      </div>
+
+
+      <div class="card" data-category="Iphone 16">
+        <a href="items/iphone16edesc.html" target="_blank" rel="">
+          <img src="img/iphone16e.jpg" alt="iPhone 16e">
+        </a>
+        <p class="item-name">iPhone 16e</p>
+        <p class="item-price" data-price="85000">85000</p>
+        <a class="card-link" href="items/iphone16edesc.html">Подробнее</a>
+
+        <button class="card button" data-id=2>Добавить в корзину</button>
+      </div>
+
+    </div>
+
+  </main>
+  <hr>
+  <footer class="footer">
+    <p>© Все права защищены</p>
+  </footer>
+  <script src="catalog.js"></script>
+</body>
+
+</html>
