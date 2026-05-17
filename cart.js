@@ -3,7 +3,7 @@ let clearBtn = document.querySelector('.clear-cart')
 
 const removeFromCart = (index) => {
   window.cart.splice(index, 1);
-  
+  localStorage.setItem('myCart', JSON.stringify(window.cart));
   renderCart()
 }
 
@@ -34,7 +34,7 @@ const renderCart = () => {
 const clearCart = () => {
   if (window.cart.length != 0) {
     window.cart = []
-    
+    localStorage.removeItem('myCart')
     renderCart();
     alert('Ваша корзина была очищена')
   } else {

@@ -36,7 +36,7 @@ const addToCart = (id) => {
     const product = products.find(element => element.id === id);
     if (product) {
         window.cart.push(product)
-        
+        localStorage.setItem('myCart', JSON.stringify(window.cart));
         alert('Товар добавлен в корзину')
     }
 
